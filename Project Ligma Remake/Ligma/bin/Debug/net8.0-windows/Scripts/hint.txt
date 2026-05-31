@@ -1,0 +1,2 @@
+local h = Instance.new("Hint", workspace)
+h.Text = "THIS GAME GOT HACKED BY TEAM ZIGMA || DISC INVITE: .gg/sXxBnhZZwE ||" 

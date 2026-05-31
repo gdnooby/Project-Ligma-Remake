@@ -1,0 +1,89 @@
+s = Instance.new("Sky")
+s.Name = "SKY"
+s.SkyboxBk = "http://www.roblox.com/asset/?id=172423468"
+s.SkyboxDn = "http://www.roblox.com/asset/?id=172423468"
+s.SkyboxFt = "http://www.roblox.com/asset/?id=172423468"
+s.SkyboxLf = "http://www.roblox.com/asset/?id=172423468"
+s.SkyboxRt = "http://www.roblox.com/asset/?id=172423468"
+s.SkyboxUp = "http://www.roblox.com/asset/?id=172423468"
+s.Parent = game.Lighting
+local c00lkidd1 = Instance.new("Sound", game.SoundService)
+local c00lkidd2 = Instance.new("Sound", game.SoundService)
+local c00lkidd3 = Instance.new("Sound", game.SoundService)
+local c00lkidd4 = Instance.new("Sound", game.SoundService)
+local c00lkidd5 = Instance.new("Sound", game.SoundService)
+local c00lkidd6 = Instance.new("Sound", game.SoundService)
+
+Instance.new("DistortionSoundEffect", c00lkidd1)
+Instance.new("DistortionSoundEffect", c00lkidd1)
+Instance.new("DistortionSoundEffect", c00lkidd1)
+
+Instance.new("DistortionSoundEffect", c00lkidd2)
+Instance.new("DistortionSoundEffect", c00lkidd2)
+Instance.new("DistortionSoundEffect", c00lkidd2)
+
+Instance.new("DistortionSoundEffect", c00lkidd3)
+Instance.new("DistortionSoundEffect", c00lkidd3)
+Instance.new("DistortionSoundEffect", c00lkidd3)
+
+Instance.new("DistortionSoundEffect", c00lkidd4)
+Instance.new("DistortionSoundEffect", c00lkidd4)
+Instance.new("DistortionSoundEffect", c00lkidd4)
+
+Instance.new("DistortionSoundEffect", c00lkidd5)
+Instance.new("DistortionSoundEffect", c00lkidd5)
+Instance.new("DistortionSoundEffect", c00lkidd5)
+
+c00lkidd1.SoundId = "rbxassetid://82020270111776"
+c00lkidd2.SoundId = "rbxassetid://98507417558287"
+c00lkidd3.SoundId = "rbxassetid://86474191257848"
+c00lkidd4.SoundId = "rbxassetid://84113601885842"
+c00lkidd5.SoundId = "rbxassetid://83282320583623"
+
+c00lkidd1.Volume = 10
+c00lkidd2.Volume = 10
+c00lkidd3.Volume = 10
+c00lkidd4.Volume = 10
+c00lkidd5.Volume = 10
+
+c00lkidd1.PlaybackSpeed = 1
+c00lkidd2.PlaybackSpeed = 1
+c00lkidd3.PlaybackSpeed = 1
+c00lkidd4.PlaybackSpeed = 1
+c00lkidd5.PlaybackSpeed = 1
+
+
+c00lkidd1:Play()
+
+c00lkidd1.Ended:Connect(function()
+c00lkidd2:Play()
+end)
+
+c00lkidd2.Ended:Connect(function()
+c00lkidd3:Play()
+end)
+
+c00lkidd3.Ended:Connect(function()
+c00lkidd4:Play()
+end)
+
+c00lkidd4.Ended:Connect(function()
+c00lkidd5:Play()
+end)
+
+c00lkidd5.Ended:Connect(function()
+c00lkidd6:Play()
+end)
+local ID =18889618673 --id here
+t1 = "http://www.roblox.com/asset/?id=18343405871"
+t2 = "http://www.roblox.com/asset/?id=18343405871"
+t3 = "http://www.roblox.com/asset/?id=18343405871"
+
+local p = game.Players:GetChildren()
+local w = game.Workspace:GetChildren()
+
+for i,v in pairs(p) do
+pe = Instance.new("ParticleEmitter", v.Character.Head)
+pe.Texture = t3
+pe.VelocitySpread = 5
+end

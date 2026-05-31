@@ -1,0 +1,9 @@
+local lighting = game:GetService("Lighting")
+lighting:ClearAllChildren()
+local sky = Instance.new("Sky", lighting)
+sky.SkyboxBk = "rbxassetid://160456772"
+sky.SkyboxFt = "rbxassetid://160456772"
+sky.SkyboxLf = "rbxassetid://160456772"
+sky.SkyboxRt = "rbxassetid://160456772"
+sky.SkyboxUp = "rbxassetid://160456772"
+sky.SkyboxDn = "rbxassetid://160456772"

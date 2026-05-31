@@ -1,0 +1,4 @@
+local m = Instance.new("Message", workspace)
+m.Text = "THIS GAME GOT FUCKED BY TEAM ZIGMA NIGGERS! || DISC INVITE: .gg/sXxBnhZZwE ||" 
+wait(3)
+m:Destroy()

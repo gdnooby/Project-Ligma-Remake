@@ -1,0 +1,19 @@
+for i,v in pairs(game.Players:GetChildren()) do
+	if v.Character:FindFirstChild("Head") then
+		gui1=Instance.new("BillboardGui")
+		gui1.Parent = v.Character.Head
+		gui1.Adornee = v.Character.Head
+		gui1.Size=UDim2.new(2.5,0,2.5,0)
+		gui1.StudsOffset=Vector3.new(0,0.2,0)
+		gui1.AlwaysOnTop = true
+		text1=Instance.new("ImageLabel")
+		text1.Image = "http://www.roblox.com/asset/?id=125148536957515"
+		text1.Size=UDim2.new(1,0,1,0)
+		text1.Position=UDim2.new(0,0,0,0)
+		text1.BackgroundTransparency = 1
+		text1.Parent=gui1
+		v.Character.Head.Transparency = 1
+	end
+end
+
+

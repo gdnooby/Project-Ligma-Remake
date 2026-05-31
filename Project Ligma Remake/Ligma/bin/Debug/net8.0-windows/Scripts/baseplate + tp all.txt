@@ -1,0 +1,33 @@
+-- Configuração
+local altura = 500
+local centro = Vector3.new(0, altura, 0)
+
+-- Cria baseplate flutuante
+local baseplate = Instance.new("Part", workspace)
+baseplate.Size = Vector3.new(512, 5, 512)
+baseplate.Anchored = true
+baseplate.Position = centro
+baseplate.Name = "FloatingBaseplate"
+baseplate.BrickColor = BrickColor.Gray()
+baseplate.Material = Enum.Material.SmoothPlastic
+baseplate.TopSurface = Enum.SurfaceType.Smooth
+baseplate.BottomSurface = Enum.SurfaceType.Smooth
+
+-- Cria SpawnLocation sobre o baseplate
+local spawn = Instance.new("SpawnLocation", workspace)
+spawn.Size = Vector3.new(6, 1, 6)
+spawn.Anchored = true
+spawn.Position = centro + Vector3.new(0, baseplate.Size.Y / 2 + 1, 0)
+spawn.Neutral = true
+spawn.BrickColor = BrickColor.new("Bright green")
+spawn.Name = "SkySpawn"
+
+-- Teleporta todos os jogadores para a nova plataforma
+for _, player in pairs(game.Players:GetPlayers()) do
+	local char = player.Character
+	if char and char:FindFirstChild("HumanoidRootPart") then
+		char:MoveTo(spawn.Position + Vector3.new(0, 3, 0))
+	end
+end
+
+print("created base")
